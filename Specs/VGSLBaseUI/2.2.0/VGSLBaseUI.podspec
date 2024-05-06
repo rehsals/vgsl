@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'VGSLBaseUI'
   s.module_name      = 'BaseUIPublic'
-  s.version          = '2.2.0'
+  s.version          = '2.2.0-static'
   s.summary          = 'A useful set of basic components for an iOS app'
   s.description      = 'A useful set of basic components for an iOS app'
   s.homepage         = 'https://github.com/yandex/vgsl'
@@ -15,7 +15,8 @@ Pod::Spec.new do |s|
   s.prefix_header_file = false
   s.platforms = { :ios => '11.0' }
   
-  s.dependency 'VGSLBaseTiny', s.version.to_s
+  s.dependency 'VGSLBaseTiny', "#{s.version.to_s}"
+  s.static_framework = true
 
   s.source_files = [
     'BaseUIPublic/**/*'
