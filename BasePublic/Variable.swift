@@ -3,7 +3,7 @@
 import Foundation
 
 @dynamicMemberLookup
-@propertyWrapper
+@frozen @propertyWrapper
 public struct Variable<T> {
   @usableFromInline
   let getter: () -> T

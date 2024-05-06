@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.prefix_header_file = false
   s.platforms = { :ios => '11.0' }
   
-  s.dependency 'VGSLBaseTiny', "#{s.version.to_s}"
+  s.dependency 'VGSLBaseTiny', s.version.to_s
   s.static_framework = true
 
   s.source_files = [
