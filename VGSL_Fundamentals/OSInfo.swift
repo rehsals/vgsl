@@ -40,13 +40,11 @@ public struct OSInfo {
     self.platform = platform
   }
 
-  @usableFromInline
   static let _current = Self(
     version: operatingSystemVersion(),
     platform: Platform.current
   )
 
-  @inlinable
   static func operatingSystemVersion() -> OSVersion {
     let v = _swift_stdlib_operatingSystemVersion()
     return OSVersion(v.majorVersion, v.minorVersion, v.patchVersion)
