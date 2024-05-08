@@ -2,6 +2,7 @@
 
 @_implementationOnly import SwiftShims
 
+@frozen
 public struct OSInfo {
   public enum Platform: Equatable {
     /// https://docs.swift.org/swift-book/ReferenceManual/Statements.html#ID539

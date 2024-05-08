@@ -2,6 +2,7 @@
 
 import Foundation
 
+@frozen
 @dynamicMemberLookup
 @propertyWrapper
 public struct Variable<T> {

@@ -1,13 +1,15 @@
 // Copyright 2023 Yandex LLC. All rights reserved.
 
+@frozen
 public struct Zip3Sequence<Seq1: Sequence, Seq2: Sequence, Seq3: Sequence>: Sequence {
   public typealias Element = (Seq1.Element, Seq2.Element, Seq3.Element)
 
+  @frozen
   public struct Iterator: IteratorProtocol {
     @usableFromInline
     internal var _it: (Seq1.Iterator, Seq2.Iterator, Seq3.Iterator)
     @usableFromInline // generic-performance
-    internal var _isExhausted = false
+    internal var _isExhausted: Bool
 
     @inlinable
     internal init(
@@ -16,6 +18,7 @@ public struct Zip3Sequence<Seq1: Sequence, Seq2: Sequence, Seq3: Sequence>: Sequ
       _ it3: Seq3.Iterator
     ) {
       _it = (it1, it2, it3)
+      _isExhausted = false
     }
 
     @inlinable

@@ -6,6 +6,7 @@ import Foundation
 @_implementationOnly import OSLog
 #endif
 
+@_fixed_layout
 @dynamicMemberLookup
 public final class Lazy<T> {
   @usableFromInline
