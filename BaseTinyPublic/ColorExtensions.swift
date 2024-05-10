@@ -22,19 +22,19 @@ extension Color: CustomDebugStringConvertible {
 }
 
 extension Color {
-  public static var black = SystemColor.black.rgba
-  public static var blue = SystemColor.blue.rgba
-  public static var brown: Color = SystemColor.brown.rgba
-  public static var clear: Color = SystemColor.clear.rgba
-  public static var cyan: Color = SystemColor.cyan.rgba
-  public static var darkGray: Color = SystemColor.darkGray.rgba
-  public static var gray: Color = SystemColor.gray.rgba
-  public static var green: Color = SystemColor.green.rgba
-  public static var lightGray: Color = SystemColor.lightGray.rgba
-  public static var magenta: Color = SystemColor.magenta.rgba
-  public static var orange: Color = SystemColor.orange.rgba
-  public static var purple: Color = SystemColor.purple.rgba
-  public static var red: Color = SystemColor.red.rgba
-  public static var white: Color = SystemColor.white.rgba
-  public static var yellow: Color = SystemColor.yellow.rgba
+  public static let black = SystemColor.black.rgba
+  public static let blue = SystemColor.blue.rgba
+  public static let brown: Color = SystemColor.brown.rgba
+  public static let clear: Color = SystemColor.clear.rgba
+  public static let cyan: Color = SystemColor.cyan.rgba
+  public static let darkGray: Color = SystemColor.darkGray.rgba
+  public static let gray: Color = SystemColor.gray.rgba
+  public static let green: Color = SystemColor.green.rgba
+  public static let lightGray: Color = SystemColor.lightGray.rgba
+  public static let magenta: Color = SystemColor.magenta.rgba
+  public static let orange: Color = SystemColor.orange.rgba
+  public static let purple: Color = SystemColor.purple.rgba
+  public static let red: Color = SystemColor.red.rgba
+  public static let white: Color = SystemColor.white.rgba
+  public static let yellow: Color = SystemColor.yellow.rgba
 }
