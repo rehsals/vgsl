@@ -16,6 +16,9 @@ Pod::Spec.new do |s|
   s.platforms = { :ios => '11.0', :tvos => '11.0' }
 
   s.dependency 'VGSL_Fundamentals_Tiny', s.version.to_s
+  s.pod_target_xcconfig = {
+    'SWIFT_OPTIMIZATION_LEVEL' => '-Onone'
+  }
 
   s.source_files = [
     'BaseTinyPublic/**/*'
