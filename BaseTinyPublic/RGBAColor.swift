@@ -2,7 +2,6 @@
 
 import CoreGraphics
 
-@frozen
 public struct RGBAColor {
   public let red: CGFloat
   public let green: CGFloat
